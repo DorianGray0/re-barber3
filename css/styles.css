@@ -14,8 +14,34 @@ body {
   background-color: #ffffff;
 }
 
-.list {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 1px solid red;
 }
 
 .link {
@@ -71,6 +97,9 @@ body {
 /* ----------------------------Header */
 
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   background-color: gray;
 }
 
@@ -134,10 +163,14 @@ body {
 }
 
 .hero-upper-text {
+  margin-bottom: 20px;
+
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
+  margin-bottom: 20px;
+
   font-size: 72px;
 }
 
@@ -147,28 +180,38 @@ body {
 
 /* ---------------------------------about */
 
-/* .about {
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.about-list {
+/* .about-list {
 }
 
 .about-item {
 } */
 
 .about-upper-text {
+  margin-bottom: 20px;
+
   color: var(--second-title-color);
 }
 
 .about-title {
+  margin-bottom: 20px;
+
   color: var(--second-title-color);
 }
 
 .about-down-text {
+  margin-bottom: 20px;
+
   color: var(--secondary-text-color);
 }
 
 .about-text {
+  margin-bottom: 42px;
+
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
@@ -182,14 +225,21 @@ body {
 /* -------------------------servisec */
 
 .services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: rgb(118, 132, 132);
 }
 
 .services-upper-text {
+  margin-bottom: 9px;
+
   color: rgba(157, 164, 189, 0.6);
 }
 
 .services-title {
+  margin-bottom: 55px;
+
   color: var(--first-title-color);
 }
 
@@ -212,10 +262,12 @@ body {
 
 /* ------------------------benefits */
 
-/* .benefits {
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.benefits-list {
+/* .benefits-list {
 }
 
 .benefits-item {
@@ -239,10 +291,14 @@ body {
 }
 
 .benefits-upper-text {
+  margin-bottom: 20px;
+
   color: var(--second-title-color);
 }
 
 .benefits-title {
+  margin-bottom: 20px;
+
   color: var(--second-title-color);
 }
 
@@ -253,14 +309,21 @@ body {
 /* ---------------------------barbers */
 
 .team {
-  background: #f7f7f7;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: #f7f7f7;
 }
 
 .team-upper-text {
+  margin-bottom: 20px;
+
   color: var(--second-title-color);
 }
 
 .team-title {
+  margin-bottom: 44px;
+
   color: var(--second-title-color);
 }
 
@@ -271,6 +334,8 @@ body {
 } */
 
 .team-item-title {
+  margin-bottom: 8px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
@@ -289,10 +354,14 @@ body {
 
 /* ---------------------------portfolio */
 
-/* .portfilio {
-} */
+.portfilio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .portfilio-text {
+  margin-bottom: 44px;
+
   color: var(--second-title-color);
 }
 
@@ -305,6 +374,9 @@ body {
 /* ----------------------------booking */
 
 .booking {
+  padding-top: 130px;
+  padding-bottom: 174px;
+
   background-color: rgb(9, 69, 97);
 }
 
@@ -315,47 +387,55 @@ body {
 /* ----------------------------------------contacts */
 
 .contacts {
+  padding-top: 130px;
+  padding-bottom: 111px;
+
   background-color: rgb(9, 69, 97);
 }
 
 .contacts-title {
+  margin-bottom: 40px;
+
   color: var(--first-title-color);
 }
 
-/* .address {
+.address {
+  margin-bottom: 70px;
 }
 
-.address-list {
-}
-
-.address-item {
+/* .address-list {
 } */
 
-.address-link {
+.address-item:first-child {
   font-weight: 700;
-  color: var(--primary-text-color);
 }
 
-/* .contacts-item {
-} */
-
-.contacts-link,
-.adress-text {
-  color: var(--primary-text-color);
+.address-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.contacts-link.underline {
+.address-item:last-child {
   text-decoration: underline;
 }
 
-.adress-upper-text {
+.address-link,
+.contacts-text {
+  color: var(--primary-text-color);
+}
+
+.contacts-upper-text {
+  margin-bottom: 20px;
+
   color: var(--first-title-color);
 }
 
 /* ------------------------------foter */
 
 .footer {
-  background: #f7f7f7;
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  background-color: #f7f7f7;
 }
 
 .footer-text {
