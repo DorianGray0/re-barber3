@@ -231,7 +231,7 @@ address {
 }
 
 .about-item {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 2 * var(--gap-regular)) / 2);
 }
 
 .about-wrap {
@@ -297,7 +297,7 @@ address {
 }
 
 .services-list {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 2 * var(--gap-regular)) / 2);
   padding: 30px 20px;
   outline: 1px solid red;
 }
@@ -396,11 +396,14 @@ address {
   color: var(--second-title-color);
 }
 
-/* .team-list {
-} */
+.team-list {
+  display: flex;
+  gap: var(--gap-regular);
+}
 
-/* .team-item {
-} */
+.team-item {
+  flex-basis: calc((100% - 2 * var(--gap-regular)) / 3);
+}
 
 .team-item-title {
   margin-bottom: 8px;
@@ -434,11 +437,16 @@ address {
   color: var(--second-title-color);
 }
 
-/* .portfilio-list {
+.portfilio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--gap-regular);
+  row-gap: 50px;
 }
 
 .portfilio-item {
-} */
+  flex-basis: calc((100% - 3 * var(--gap-regular)) / 4);
+}
 
 /* ----------------------------booking */
 
