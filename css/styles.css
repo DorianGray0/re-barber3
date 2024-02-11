@@ -231,7 +231,7 @@ address {
 }
 
 .about-item {
-  flex-basis: calc((100% - 2 * var(--gap-regular)) / 2);
+  flex-basis: calc((100% - 1 * var(--gap-regular)) / 2);
 }
 
 .about-wrap {
@@ -297,7 +297,7 @@ address {
 }
 
 .services-list {
-  flex-basis: calc((100% - 2 * var(--gap-regular)) / 2);
+  flex-basis: calc((100% - 1 * var(--gap-regular)) / 2);
   padding: 30px 20px;
   outline: 1px solid red;
 }
